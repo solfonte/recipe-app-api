@@ -1,0 +1,14 @@
+#sudo docker-compose build
+version: "3"
+
+#services that make up our application
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8000:8000" #host:image
+    volumes:
+        - ./app:/app #maps the app directory to the app directory in our docker image.
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:8000"
