@@ -2,6 +2,7 @@
 
 * "Build a Backend REST API with python & Django" Udemy course  
 
+### Commands
 Command for running tests:  
 `sudo docker-compose run app sh -c "python manage.py test"`
 Command for creating core folder in app:  
